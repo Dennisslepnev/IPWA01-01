@@ -4,208 +4,295 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Kleiderspenden-Registrierung</title>
 
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Eigenes CSS -->
     <link rel="stylesheet" href="design.css">
+
 </head>
 
 <body>
 
-    <!-- Header -->
+    <!-- HEADER -->
 
-    <header>
+    <header class="bg-success text-white text-center p-4">
+
         <h1>👕 KleiderHilfe e.V.</h1>
-        <p>Gemeinsam helfen durch Kleiderspenden</p>
+
+        <p>
+            Gemeinsam helfen durch Kleiderspenden
+        </p>
+
     </header>
 
-    <hr>
+    <!-- NAVIGATION -->
 
-    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-    <nav>
-        <a href="#">Startseite</a> |
-        <a href="#">Spende registrieren</a> |
-        <a href="#">Über uns</a> |
-        <a href="#">Kontakt</a>
+        <div class="container">
+
+            <a class="navbar-brand" href="#">
+                KleiderHilfe
+            </a>
+
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#hauptmenu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="hauptmenu">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Startseite
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Spende registrieren
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Über uns
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Kontakt
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
     </nav>
 
-    <hr>
+    <!-- HAUPTINHALT -->
 
-    <!-- Hauptinhalt -->
+    <main class="container mt-5">
 
-    <main>
+        <!-- EINLEITUNG -->
 
-        <section id="einleitung">
+        <section>
 
             <h2>Kleiderspende registrieren</h2>
 
             <p>
-                Über dieses Portal können Sie Ihre Kleiderspende registrieren.
-                Wählen Sie aus, ob die Kleidung persönlich an der Geschäftsstelle
-                abgegeben oder durch ein Sammelfahrzeug abgeholt werden soll.
+                Registrieren Sie Ihre Kleiderspende bequem online.
+                Wählen Sie, ob die Kleidung persönlich an der
+                Geschäftsstelle abgegeben oder durch ein Sammelfahrzeug
+                abgeholt werden soll.
             </p>
 
         </section>
 
         <hr>
 
-        <section id="registrierung">
+        <!-- FORMULAR -->
+
+        <section>
 
             <h2>Registrierungsformular</h2>
 
-            <form action="#" method="post">
+            <form>
 
-                <fieldset>
+                <!-- ÜBERGABEART -->
 
-                    <legend>Art der Übergabe</legend>
+                <div class="mb-4">
 
-                    <input type="radio" id="geschaeftsstelle"
-                           name="uebergabe"
-                           value="geschaeftsstelle">
-
-                    <label for="geschaeftsstelle">
-                        Übergabe an der Geschäftsstelle
+                    <label class="form-label">
+                        Art der Übergabe
                     </label>
 
-                    <br><br>
+                    <div class="form-check">
 
-                    <input type="radio" id="abholung"
-                           name="uebergabe"
-                           value="abholung">
+                        <input class="form-check-input"
+                               type="radio"
+                               name="uebergabe"
+                               id="geschaeftsstelle">
 
-                    <label for="abholung">
-                        Abholung durch Sammelfahrzeug
+                        <label class="form-check-label"
+                               for="geschaeftsstelle">
+
+                            Übergabe an der Geschäftsstelle
+
+                        </label>
+
+                    </div>
+
+                    <div class="form-check">
+
+                        <input class="form-check-input"
+                               type="radio"
+                               name="uebergabe"
+                               id="abholung">
+
+                        <label class="form-check-label"
+                               for="abholung">
+
+                            Abholung durch Sammelfahrzeug
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+                <!-- ADRESSE -->
+
+                <div class="mb-4">
+
+                    <h5>Abholadresse</h5>
+
+                    <div class="mb-3">
+
+                        <label for="strasse" class="form-label">
+                            Straße und Hausnummer
+                        </label>
+
+                        <input type="text"
+                               id="strasse"
+                               class="form-control">
+
+                    </div>
+
+                    <div class="mb-3">
+
+                        <label for="plz" class="form-label">
+                            Postleitzahl
+                        </label>
+
+                        <input type="text"
+                               id="plz"
+                               class="form-control">
+
+                    </div>
+
+                    <div class="mb-3">
+
+                        <label for="ort" class="form-label">
+                            Ort
+                        </label>
+
+                        <input type="text"
+                               id="ort"
+                               class="form-control">
+
+                    </div>
+
+                </div>
+
+                <!-- KLEIDUNG -->
+
+                <div class="mb-4">
+
+                    <label for="kleidungsart"
+                           class="form-label">
+
+                        Art der Kleidung
+
                     </label>
-
-                </fieldset>
-
-                <br>
-
-                <fieldset>
-
-                    <legend>Abholadresse</legend>
-
-                    <label for="strasse">
-                        Straße und Hausnummer:
-                    </label>
-
-                    <br>
-
-                    <input type="text"
-                           id="strasse"
-                           name="strasse">
-
-                    <br><br>
-
-                    <label for="plz">
-                        Postleitzahl:
-                    </label>
-
-                    <br>
-
-                    <input type="text"
-                           id="plz"
-                           name="plz"
-                           maxlength="5">
-
-                    <br><br>
-
-                    <label for="ort">
-                        Ort:
-                    </label>
-
-                    <br>
-
-                    <input type="text"
-                           id="ort"
-                           name="ort">
-
-                </fieldset>
-
-                <br>
-
-                <fieldset>
-
-                    <legend>Kleiderspende</legend>
-
-                    <label for="kleidungsart">
-                        Art der Kleidung:
-                    </label>
-
-                    <br>
 
                     <select id="kleidungsart"
-                            name="kleidungsart">
+                            class="form-select">
 
-                        <option value="">
+                        <option>
                             Bitte auswählen
                         </option>
 
-                        <option value="winterkleidung">
+                        <option>
                             Winterkleidung
                         </option>
 
-                        <option value="sommerkleidung">
+                        <option>
                             Sommerkleidung
                         </option>
 
-                        <option value="kinderkleidung">
+                        <option>
                             Kinderkleidung
                         </option>
 
-                        <option value="schuhe">
+                        <option>
                             Schuhe
                         </option>
 
-                        <option value="jacken">
+                        <option>
                             Jacken und Mäntel
                         </option>
 
                     </select>
 
-                    <br><br>
+                </div>
 
-                    <label for="krisengebiet">
-                        Krisengebiet:
+                <!-- KRISENGEBIET -->
+
+                <div class="mb-4">
+
+                    <label for="krisengebiet"
+                           class="form-label">
+
+                        Krisengebiet
+
                     </label>
 
-                    <br>
-
                     <select id="krisengebiet"
-                            name="krisengebiet">
+                            class="form-select">
 
-                        <option value="">
+                        <option>
                             Bitte auswählen
                         </option>
 
-                        <option value="ukraine">
+                        <option>
                             Ukraine
                         </option>
 
-                        <option value="syrien">
+                        <option>
                             Syrien
                         </option>
 
-                        <option value="gaza">
+                        <option>
                             Gaza
                         </option>
 
-                        <option value="sudan">
+                        <option>
                             Sudan
                         </option>
 
                     </select>
 
-                </fieldset>
+                </div>
 
-                <br>
+                <!-- BUTTONS -->
 
-                <button type="submit">
+                <button type="submit"
+                        class="btn btn-success">
+
                     Spende registrieren
+
                 </button>
 
-                <button type="reset">
+                <button type="reset"
+                        class="btn btn-secondary">
+
                     Eingaben zurücksetzen
+
                 </button>
 
             </form>
@@ -214,25 +301,27 @@
 
         <hr>
 
-        <section id="geschaeftsstelle">
+        <!-- GESCHÄFTSSTELLE -->
+
+        <section>
 
             <h2>Geschäftsstelle</h2>
 
             <p>
+
                 KleiderHilfe e.V.<br>
                 Musterstraße 1<br>
                 12345 Musterstadt
+
             </p>
 
         </section>
 
     </main>
 
-    <hr>
+   <!-- FOOTER -->
 
-    <!-- Footer -->
-
-    <footer>
+    <footer class="bg-dark text-white text-center p-4 mt-5">
 
         <p>
             © 2026 KleiderHilfe e.V.
@@ -245,6 +334,14 @@
         </p>
 
     </footer>
+
+    <!-- Bootstrap JavaScript -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Eigenes JavaScript -->
+
+    <script src="script.js"></script>
 
 </body>
 
