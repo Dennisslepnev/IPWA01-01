@@ -1,14 +1,251 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kleiderspende e.V.</title>
+    <title>Kleiderspenden-Registrierung</title>
+
+    <link rel="stylesheet" href="design.css">
 </head>
+
 <body>
-    <h1>TEST</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, accusamus nam quidem omnis saepe numquam minus necessitatibus eveniet adipisci quos repellendus veniam reiciendis, dicta hic obcaecati quod dolorum quis voluptatibus.
-    </p>
-    <p>Lorem ipsum dolor sit amet. </p>
+
+    <!-- Header -->
+
+    <header>
+        <h1>👕 KleiderHilfe e.V.</h1>
+        <p>Gemeinsam helfen durch Kleiderspenden</p>
+    </header>
+
+    <hr>
+
+    <!-- Navigation -->
+
+    <nav>
+        <a href="#">Startseite</a> |
+        <a href="#">Spende registrieren</a> |
+        <a href="#">Über uns</a> |
+        <a href="#">Kontakt</a>
+    </nav>
+
+    <hr>
+
+    <!-- Hauptinhalt -->
+
+    <main>
+
+        <section id="einleitung">
+
+            <h2>Kleiderspende registrieren</h2>
+
+            <p>
+                Über dieses Portal können Sie Ihre Kleiderspende registrieren.
+                Wählen Sie aus, ob die Kleidung persönlich an der Geschäftsstelle
+                abgegeben oder durch ein Sammelfahrzeug abgeholt werden soll.
+            </p>
+
+        </section>
+
+        <hr>
+
+        <section id="registrierung">
+
+            <h2>Registrierungsformular</h2>
+
+            <form action="#" method="post">
+
+                <fieldset>
+
+                    <legend>Art der Übergabe</legend>
+
+                    <input type="radio" id="geschaeftsstelle"
+                           name="uebergabe"
+                           value="geschaeftsstelle">
+
+                    <label for="geschaeftsstelle">
+                        Übergabe an der Geschäftsstelle
+                    </label>
+
+                    <br><br>
+
+                    <input type="radio" id="abholung"
+                           name="uebergabe"
+                           value="abholung">
+
+                    <label for="abholung">
+                        Abholung durch Sammelfahrzeug
+                    </label>
+
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+
+                    <legend>Abholadresse</legend>
+
+                    <label for="strasse">
+                        Straße und Hausnummer:
+                    </label>
+
+                    <br>
+
+                    <input type="text"
+                           id="strasse"
+                           name="strasse">
+
+                    <br><br>
+
+                    <label for="plz">
+                        Postleitzahl:
+                    </label>
+
+                    <br>
+
+                    <input type="text"
+                           id="plz"
+                           name="plz"
+                           maxlength="5">
+
+                    <br><br>
+
+                    <label for="ort">
+                        Ort:
+                    </label>
+
+                    <br>
+
+                    <input type="text"
+                           id="ort"
+                           name="ort">
+
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+
+                    <legend>Kleiderspende</legend>
+
+                    <label for="kleidungsart">
+                        Art der Kleidung:
+                    </label>
+
+                    <br>
+
+                    <select id="kleidungsart"
+                            name="kleidungsart">
+
+                        <option value="">
+                            Bitte auswählen
+                        </option>
+
+                        <option value="winterkleidung">
+                            Winterkleidung
+                        </option>
+
+                        <option value="sommerkleidung">
+                            Sommerkleidung
+                        </option>
+
+                        <option value="kinderkleidung">
+                            Kinderkleidung
+                        </option>
+
+                        <option value="schuhe">
+                            Schuhe
+                        </option>
+
+                        <option value="jacken">
+                            Jacken und Mäntel
+                        </option>
+
+                    </select>
+
+                    <br><br>
+
+                    <label for="krisengebiet">
+                        Krisengebiet:
+                    </label>
+
+                    <br>
+
+                    <select id="krisengebiet"
+                            name="krisengebiet">
+
+                        <option value="">
+                            Bitte auswählen
+                        </option>
+
+                        <option value="ukraine">
+                            Ukraine
+                        </option>
+
+                        <option value="syrien">
+                            Syrien
+                        </option>
+
+                        <option value="gaza">
+                            Gaza
+                        </option>
+
+                        <option value="sudan">
+                            Sudan
+                        </option>
+
+                    </select>
+
+                </fieldset>
+
+                <br>
+
+                <button type="submit">
+                    Spende registrieren
+                </button>
+
+                <button type="reset">
+                    Eingaben zurücksetzen
+                </button>
+
+            </form>
+
+        </section>
+
+        <hr>
+
+        <section id="geschaeftsstelle">
+
+            <h2>Geschäftsstelle</h2>
+
+            <p>
+                KleiderHilfe e.V.<br>
+                Musterstraße 1<br>
+                12345 Musterstadt
+            </p>
+
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 KleiderHilfe e.V.
+        </p>
+
+        <p>
+            Impressum |
+            Datenschutz |
+            Kontakt
+        </p>
+
+    </footer>
+
 </body>
+
 </html>

@@ -1,0 +1,133 @@
+/* Allgemeine Einstellungen */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* Header */
+
+header {
+    background-color: #2e8b57;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Navigation */
+
+nav {
+    background-color: #3cb371;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hauptbereich */
+
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+}
+
+/* Abschnitte */
+
+section {
+    margin-bottom: 30px;
+}
+
+/* Überschriften */
+
+h1,
+h2 {
+    color: #2e8b57;
+}
+
+/* Formular */
+
+form {
+    padding: 15px;
+}
+
+fieldset {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #cccccc;
+}
+
+legend {
+    font-weight: bold;
+}
+
+label {
+    font-weight: bold;
+}
+
+/* Eingabefelder */
+
+input,
+select {
+    width: 100%;
+    max-width: 400px;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+/* Buttons */
+
+button {
+    background-color: #2e8b57;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #246b45;
+}
+
+/* Footer */
+
+footer {
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    input,
+    select {
+        width: 100%;
+    }
+}
