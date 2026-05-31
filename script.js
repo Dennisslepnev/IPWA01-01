@@ -41,7 +41,15 @@ form.addEventListener("submit", function (event) {
         alert("Bitte wählen Sie ein Krisengebiet aus.");
         return;
     }
+    let uebergabeart = "";
 
+if (geschaeftsstelle.checked) {
+    uebergabeart = "Übergabe an der Geschäftsstelle";
+}
+
+if (abholung.checked) {
+    uebergabeart = "Abholung durch Sammelfahrzeug";
+}
     let ortDerSpende = "";
 
     if (geschaeftsstelle.checked) {
@@ -76,7 +84,8 @@ form.addEventListener("submit", function (event) {
             <h2>Registrierung erfolgreich</h2>
 
             <p>Vielen Dank für Ihre Kleiderspende.</p>
-
+            
+            <p><strong>Art der Übergabe:</strong> ${uebergabeart}</p>
             <p><strong>Art der Kleidung:</strong> ${kleidungsart.value}</p>
             <p><strong>Krisengebiet:</strong> ${krisengebiet.value}</p>
             <p><strong>Datum:</strong> ${datum}</p>
