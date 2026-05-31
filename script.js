@@ -80,17 +80,21 @@ if (abholung.checked) {
     const uhrzeit = jetzt.toLocaleTimeString("de-DE");
 
     document.querySelector("main").innerHTML = `
-        <section class="alert alert-success">
-            <h2>Registrierung erfolgreich</h2>
+    <section class="alert alert-success">
+        <h2>Registrierung erfolgreich</h2>
 
-            <p>Vielen Dank für Ihre Kleiderspende.</p>
-            
-            <p><strong>Art der Übergabe:</strong> ${uebergabeart}</p>
-            <p><strong>Art der Kleidung:</strong> ${kleidungsart.value}</p>
-            <p><strong>Krisengebiet:</strong> ${krisengebiet.value}</p>
-            <p><strong>Datum:</strong> ${datum}</p>
-            <p><strong>Uhrzeit:</strong> ${uhrzeit}</p>
-            <p><strong>Ort:</strong> ${ortDerSpende}</p>
-        </section>
-    `;
+        <p>Vielen Dank für Ihre Kleiderspende.</p>
+
+        <p><strong>Art der Übergabe:</strong> ${uebergabeart}</p>
+        <p><strong>Art der Kleidung:</strong> ${kleidungsart.value}</p>
+        <p><strong>Krisengebiet:</strong> ${krisengebiet.value}</p>
+        <p><strong>Datum:</strong> ${datum}</p>
+        <p><strong>Uhrzeit:</strong> ${uhrzeit}</p>
+        <p><strong>Ort:</strong> ${ortDerSpende}</p>
+
+        <button class="btn btn-success mt-3" onclick="location.reload()">
+            Neue Spende registrieren
+        </button>
+    </section>
+`;
 });
