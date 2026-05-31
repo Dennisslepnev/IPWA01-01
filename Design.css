@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    background: linear-gradient(135deg, #198754, #0f5132);
+    background: linear-gradient(135deg, #8B0000, #B22222) !important;
 }
 
 header h1 {
@@ -32,13 +32,13 @@ form {
 }
 
 h2 {
-    color: #198754;
+    color: #B22222;
     font-weight: bold;
     margin-bottom: 20px;
 }
 
 h5 {
-    color: #0f5132;
+    color: #8B0000;
     margin-bottom: 15px;
 }
 
@@ -79,4 +79,13 @@ footer {
         width: 100%;
         margin-bottom: 10px;
     }
+}
+.btn-success {
+    background-color: #B22222 !important;
+    border-color: #B22222 !important;
+}
+
+.btn-success:hover {
+    background-color: #8B0000 !important;
+    border-color: #8B0000 !important;
 }

@@ -80,7 +80,7 @@ if (abholung.checked) {
     const uhrzeit = jetzt.toLocaleTimeString("de-DE");
 
     document.querySelector("main").innerHTML = `
-    <section class="alert alert-success">
+    <section class="alert alert-danger">
         <h2>Registrierung erfolgreich</h2>
 
         <p>Vielen Dank für Ihre Kleiderspende.</p>
