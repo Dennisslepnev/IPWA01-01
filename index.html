@@ -64,55 +64,66 @@
     <main class="container mt-5">
       <!-- EINLEITUNG -->
 
-      <section id="registrierung">
+    <section id="registrierung">
+
     <h2>Registrierungsformular</h2>
 
+    <div id="fehlermeldung"
+         class="alert alert-danger"
+         style="display:none;">
+    </div>
+
+    <form>
+
         <p>
-          Registrieren Sie Ihre Kleiderspende bequem online. Wählen Sie, ob die
-          Kleidung persönlich an der Geschäftsstelle abgegeben oder durch ein
-          Sammelfahrzeug abgeholt werden soll.
+            Registrieren Sie Ihre Kleiderspende bequem online.
+            Wählen Sie, ob die Kleidung persönlich an der Geschäftsstelle
+            abgegeben oder durch ein Sammelfahrzeug abgeholt werden soll.
         </p>
-      </section>
 
-      <hr />
+        <!-- ÜBERGABEART -->
 
-      <!-- FORMULAR -->
+        <div class="mb-4">
 
-      <section>
-        <h2>Registrierungsformular</h2>
-
-        <form>
-          <!-- ÜBERGABEART -->
-
-          <div class="mb-4">
-            <label class="form-label"> Art der Übergabe </label>
+            <label class="form-label">
+                Art der Übergabe
+            </label>
 
             <div class="form-check">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="uebergabe"
-                id="geschaeftsstelle"
-              />
 
-              <label class="form-check-label" for="geschaeftsstelle">
-                Übergabe an der Geschäftsstelle
-              </label>
+                <input
+                    class="form-check-input"
+                    type="radio"
+                    name="uebergabe"
+                    id="geschaeftsstelle">
+
+                <label class="form-check-label"
+                       for="geschaeftsstelle">
+
+                    Übergabe an der Geschäftsstelle
+
+                </label>
+
             </div>
 
             <div class="form-check">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="uebergabe"
-                id="abholung"
-              />
 
-              <label class="form-check-label" for="abholung">
-                Abholung durch Sammelfahrzeug
-              </label>
+                <input
+                    class="form-check-input"
+                    type="radio"
+                    name="uebergabe"
+                    id="abholung">
+
+                <label class="form-check-label"
+                       for="abholung">
+
+                    Abholung durch Sammelfahrzeug
+
+                </label>
+
             </div>
-          </div>
+
+        </div>
 
           <!-- ADRESSE -->
           <div id="adressblock">
