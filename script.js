@@ -151,7 +151,7 @@ form.addEventListener("submit", function (event) {
     /* Bestätigungsseite */
 
     document.querySelector("main").innerHTML = `
-        <section class="alert alert-danger">
+        <section class="alert alert-success">
 
             <h2>Registrierung erfolgreich</h2>
 
